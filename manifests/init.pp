@@ -198,6 +198,7 @@ class ssh (
           }
         }
         'i386' : {
+          $default_sshd_config_serverkeybits  = '1024'
           $default_sshd_config_subsystem_sftp = '/usr/lib/ssh/sftp-server'
       }
         default: {
